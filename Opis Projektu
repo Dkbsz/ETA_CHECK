@@ -1,0 +1,18 @@
+Tytuł: automatic ETA check for sea logistics carriers
+
+Opis ogólny: Projekt ma na celu stworzenie programu, który na podstawie danych w excelu (nazwa przewoźnika oraz numer przewozowy morskiej przesyłki)
+sprawdzać datę wpłynięcia kontenerowca do portu. Jest to bardzo ważne w logistyce morskiej, ponieważ ETA (Estimated Time of Arrival) jest bardzo często
+narażona na różnego rodzaju opóźnienia. Zbyt późne wykrycie delay'u może skutkować stratami finansowymi z powodu przestojów.
+
+Funkcje i cechy: Wczytywanie numerów przesyłek z pliku .xlsx / Automatyczne odwiedzanie stron internetowych przewoźników /
+Wprowadzanie numerów przewozowych na stronach przewoźników / Pobieranie informacji o statusie przesyłek / Zapisywanie
+informacji o statusie przesyłek w nowym pliku .xlsx
+
+Zakres projektu: Projekt obejmuje automatyczne śledzenie przesyłek dla wybranych przewoźników: MSCU (docelowo MAEU, COSU, CMA, EGLV)
+z wykorzystaniem Selenium WebDriver.
+
+Technologia:
+ - Język programowania - Python.
+ - Biblioteki: pandas, Selenium.
+ - Narzędzia: WebDriver dla przeglądarki Chrome, black.
+
