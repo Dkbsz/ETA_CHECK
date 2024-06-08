@@ -4,6 +4,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 
+
+
 # Odczytanie danych z pliku .xlsx
 file_path = "baz21.xlsx"
 df = pd.read_excel(file_path)
@@ -17,7 +19,8 @@ for index, row in df.iterrows():
         data_dict[carrier] = []
     data_dict[carrier].append((index, ctd))
 
-# Inicjalizacja przeglądarki
+# Inicjalizacja przeglądarki oraz rozpoczecie stopera.
+start_time = time.time()
 driver = webdriver.Chrome()  # ver.125.0.6422.142
 driver.maximize_window()  # full screen
 
@@ -116,6 +119,8 @@ driver.quit()
 # Zapisywanie wyników do nowego excela
 result_df = df.copy()
 result_df["Result"] = result_df.index.map(results)
+
+stop_time = print("--- %s seconds ---" % (time.time() - start_time)) #timer wykonania programu
 
 final_results = "final_results.xlsx"
 result_df.to_excel(final_results, index=False)
