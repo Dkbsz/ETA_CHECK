@@ -8,7 +8,7 @@ Funkcje i cechy: Wczytywanie numerów przesyłek z pliku .xlsx / Automatyczne od
 Wprowadzanie numerów przewozowych na stronach przewoźników / Pobieranie informacji o statusie przesyłek / Zapisywanie
 informacji o statusie przesyłek w nowym pliku .xlsx
 
-Zakres projektu: Projekt obejmuje automatyczne śledzenie przesyłek dla wybranych przewoźników: MSCU (docelowo MAEU, COSU, CMA, EGLV)
+Zakres projektu: Projekt obejmuje pół-automatyczne śledzenie przesyłek dla wybranych przewoźników: MSCU (docelowo MAEU, COSU, CMA, EGLV)
 z wykorzystaniem Selenium WebDriver.
 
 Technologia:
