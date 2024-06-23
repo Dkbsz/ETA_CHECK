@@ -48,9 +48,7 @@ def accept_cookies(driver, carrier):
         if carrier == "MSCU":
             accept_button = driver.find_element(By.ID, "onetrust-accept-btn-handler")
         elif carrier == "MAEU":
-            accept_button = driver.find_element(
-                By.XPATH, '//*[@id="coiPage-1"]/div[2]/div/button[2]'
-            )
+            accept_button = driver.find_element(By.XPATH, '//*[@id="coiPage-1"]/div[2]/div/button[2]')
         else:
             return
         accept_button.click()
